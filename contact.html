@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>My Personal Website - Contact</title>
+  <title>Nyan Aung's Personal Website - Contact</title>
   <meta charset="utf-8">
 </head>
 <body>
   <header>
-    <h1>My Personal Website</h1>
+    <h1>Nyan Aung's Personal Website</h1>
     <nav>
       <a href="index.html">About</a>
       <a href="contact.html">Contact</a>
@@ -14,21 +14,74 @@
   </header>
   <main>
     <h2>Contact Me</h2>
-    <form action="#">
-      <label for="name">Name:</label>
+    <p>Don't hesitate to reach out:</p>
+      
+    <h1>Contact Information</h1>
+
+    <table border="1">
+      <colgroup>
+        <col bgcolor="yellow">
+      </colgroup>
+      <tr>
+        <th>Contact Method</th>
+        <th>Details</th>
+      </tr>
+      <tr>
+        <td>Phone Number</td>
+        <td><a href="tel:+4154654212">(415) 465-4212</a></td>
+      </tr>
+      <tr>
+        <td>Email</td>
+        <td><a href="mailto:naung@ucsd.edu">naung@ucsd.edu</a></td>
+      </tr>
+      <tr>
+        <td>Address</td>
+        <td>
+          <address>
+            9500 Gilman Dr<br>
+            La Jolla, CA 92093<br>
+            United States
+          </address>
+        </td>
+      </tr>
+    </table>
+
+    <p>Like to know be better? Please fill out this form.</p> 
+    
+    <form action="/action_page.php">
+      <fieldset>
+       <legend>Fill this form out:</legend>
+       <label for="name">Name:</label>
       <input type="text" id="name" name="name">
       <br>
       <label for="email">Email:</label>
       <input type="email" id="email" name="email">
       <br>
-      <label for="message">Message:</label>
+      <label for="message">Intro Message:</label>
       <textarea id="message" name="message"></textarea>
       <br>
       <button type="submit">Submit</button>
-    </form>
+      </fieldset>
+     </form>
+
+     
+     <button type="button" id="showTemplate">Press for Suprise!!</button>
+
+     <template id="messageTemplate">
+       <p>SUPRISEEEEE!!!</p>
+     </template>
+
+     <script>
+      //no interation at this point yet.
+    </script>
+
+    <!--Using canvas tag to draw a grey dot.-->
+    <canvas id="greyDot" width="50" height="50"></canvas>
+
   </main>
   <footer>
     <p>Copyright &copy; 2023 Nyan Aung</p>
   </footer>
+
 </body>
 </html>
