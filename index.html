@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>Nyan Aung's Personal Website</title>
+  <link rel="icon" type="image/x-icon" href="/images/strawhat.ico">
   <meta charset="utf-8">
   <style>
     .main-content {
@@ -18,7 +19,7 @@
 </head>
 <body>
   <header>
-    <h1>My Personal Website</h1>
+    <h1>Nyan Aung's Personal Website</h1>
     <nav>
       <a href="index.html">About</a>
       <a href="contact.html">Contact</a>
@@ -30,47 +31,145 @@
       <h2><strong><em>About Me</em></strong></h2>
       <p>Name: Nyan Aung</p>
       <p>School: UCSD</p>
-      <picture>
-        <source media="(min-width:200px)" srcset="ucsd1.jpeg">
-        <img src="ucsd2.jpeg" alt="UCSD" style="width:auto;">
-      </picture>
+      <iframe src="https://ucsd.edu/""></iframe>
       <p>Major: Computer Engineering</p>
       <p>Expected Graduation Date: May, 2025</p>
     </div>
   </main>
   
-  <h3>My Interests</h3>
+  <h3>Skills</h3>
   <section>
-    <p>In my free time, I enjoy:</p>
+    <p>Languages</p>
+    <ol>
+      <li><code>Python</code></li>
+      <li><code>Java</code></li>
+      <li><code>C++, C</code></li>
+      <li><code>HTML5, CSS</code></li>
+    </ol>
+    <p>Technologies</p>
     <ul>
-      <li>Coding</li>
-      <li>Learning new technologies</li>
-      <li><span>Exploring the great outdoors</span></li>
+      <li><span>VS Code, Github, Git, Microsoft Word, Excel</span></li>
     </ul>
+    <p>Languages spoken</p>
+    <ul>
+      <datalist id="Languages">
+
+      </datalist>
+      <li>English, Burmese, Chinese</li>
+    </ul>
+  </section>
+
+<details>
+  <summary>Hobbies</summary>
+  <section>
+    <ul>
+      <li>Sports: Badminton, Soccer, Basketball</li>
+       <ul> 
+        <li>
+          <p>Here is a picture of my favorite bamdinton player.</p>
+          <picture>
+          <source media="(min-width:650px)" srcset="badminton3.webp">
+          <source media="(min-width:465px)" srcset="badminton3.jpeg">
+          <img src="badminton1.webp" alt="Flowers" style="width:auto;">
+          </picture>
+        </li>
+        <li>
+          <caption>Here is a video of my favorite soccer player.</caption>
+          <video width="320" height="240" controls>
+            <source src="messi.MP4" type="video/mp4">
+          </video>
+        </li>
+        <li>
+          <figure>
+            <img src="lebron.webp" alt="Lebron" style="width:50%">
+            <figcaption>Figure: One of my favorite basketball player: Lebron James</figcaption>
+          </figure>
+        </li>
+      </ul>
+        <li>
+          I also like to listen to music in my free time, here is an audio of my favorite song at the moment.
+          <ul>
+          <p>
+            <li>
+              Mine All Mine by Mitski
+              <ul>
+                <audio controls>
+                  <source src="mineallmine.mp3" type="audio/mpeg">
+                </audio>
+              </ul>
+            </li>
+          </p>
+        </ul>
+        </li>
+    </ul>
+  </section>
+</details>
+
+  <h4>Question for Visitors</h4>
+  <section>
+    <li>
+      <form action="/action_page.php">
+        <label for="teams">Favorite Soccer team:</label>
+        <select name="teams" id="teams">
+          <optgroup label="Premier League Teams">
+            <option value="arsenal">Arsenal</option>
+            <option value="tottenham">Tottenham</option>
+            <option value="mancity">Manchester City</option>
+          </optgroup>
+          <optgroup label="Laliga Teams">
+            <option value="barcelona">Barcelona</option>
+            <option value="realmadrid">Real Madrid</option>
+            <option value="sevilla">Sevilla</option>
+          </optgroup>
+          <optgroup label="Bundesliga Teams">
+            <option value="fcbayernmunich">FC Bayern Munich</option>
+            <option value="dortmund">Dortmund</option>
+            <option value="leverkusen">Leverkusen</option>
+          </optgroup>
+        </select>
+        <br><br>
+        <input type="submit" value="Submit">
+      </form>
+    </li>
+
+    <label for="Languages">Choose a browser from this list:</label>
+    <input list="language" id="Languages" name="Languages" />
+    <datalist id="language">
+      <option value="Python"></option>
+      <option value="Java"></option>
+      <option value="C++"></option>
+      <option value="C"></option>
+    </datalist>
+
+    <br><br>
+    <input type="submit" value="Submit">
+
   </section>
   
   <aside>
     <p>Feel free to <a href="contact.html">contact me</a> for collaborations or just to say hi!</p>
   </aside>
-  
-  <p>Don't hesitate to reach out:</p>
-  <address>
-    Email: <a href="mailto:nyan@example.com">nyan@example.com</a><br>
-    Phone: <a href="tel:+1234567890">(123) 456-7890</a>
-  </address>
-  
-  <div>
-    <script>
-      // Add your JavaScript code here
-      console.log('Hello from the script!');
-    </script>
-  </div>
+
+  <p>Einstein's famous formula:</p>
+  <ul>
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+      <mrow>
+        <mi>E</mi>
+        <mo>=</mo>
+        <mi>m</mi>
+        <mo>&#8290;</mo>
+        <msup>
+          <mi>c</mi>
+          <mn>2</mn>
+        </msup>
+      </mrow>
+    </math>
+  </ul>
   
   <hr>
   
   <pre>
-    This is a preformatted text block.
-    It preserves both spacing and line breaks.
+    Thank you for checking out the website.
   </pre>
   
   <footer>
@@ -78,3 +177,4 @@
   </footer>
 </body>
 </html>
+
