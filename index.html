@@ -11,6 +11,16 @@
     h1 {
       color: #333;
     }
+    .main-content {
+      display: flex;
+    }
+    .main-content img {
+      width: 300px;
+      height: 400px;
+    }
+    .main-content h2, .main-content p {
+      margin-left: 20px;
+    }
   </style>
 </head>
 <body>
@@ -21,46 +31,48 @@
       <a href="contact.html">Contact</a>
     </nav>
   </header>
-  <main>
-    <img src="IMG_1821.jpg" alt="My photo" width="300" height="400">
-    <h2>About Me</h2>
-    <p>This is a simple personal website that I created using only HTML.</p>
-    <p>I am a <strong>software engineer</strong> with a passion for building things. I am also a <em>learner</em> and I am always looking for new things to <code>learn</code>.</p>
-    
-    <h3>My Interests</h3>
-    <section>
-      <p>In my free time, I enjoy:</p>
-      <ul>
-        <li>Coding</li>
-        <li>Learning new technologies</li>
-        <li><span>Exploring the great outdoors</span></li>
-      </ul>
-    </section>
-    
-    <aside>
-      <p>Feel free to <a href="contact.html">contact me</a> for collaborations or just to say hi!</p>
-    </aside>
-    
-    <p>Don't hesitate to reach out:</p>
-    <address>
-      Email: <a href="mailto:nyan@example.com">nyan@example.com</a><br>
-      Phone: <a href="tel:+1234567890">(123) 456-7890</a>
-    </address>
-    
+  <main class="main-content">
+    <img src="IMG_1821.jpg" alt="My photo">
     <div>
-      <script>
-        // Add your JavaScript code here
-        console.log('Hello from the script!');
-      </script>
+      <h2>About Me</h2>
+      <p>This is a simple personal website that I created using only HTML.</p>
+      <p>I am a <strong>software engineer</strong> with a passion for building things. I am also a <em>learner</em> and I am always looking for new things to <code>learn</code>.</p>
     </div>
-    
-    <hr>
-    
-    <pre>
-      This is a preformatted text block.
-      It preserves both spacing and line breaks.
-    </pre>
   </main>
+  
+  <h3>My Interests</h3>
+  <section>
+    <p>In my free time, I enjoy:</p>
+    <ul>
+      <li>Coding</li>
+      <li>Learning new technologies</li>
+      <li><span>Exploring the great outdoors</span></li>
+    </ul>
+  </section>
+  
+  <aside>
+    <p>Feel free to <a href="contact.html">contact me</a> for collaborations or just to say hi!</p>
+  </aside>
+  
+  <p>Don't hesitate to reach out:</p>
+  <address>
+    Email: <a href="mailto:nyan@example.com">nyan@example.com</a><br>
+    Phone: <a href="tel:+1234567890">(123) 456-7890</a>
+  </address>
+  
+  <div>
+    <script>
+      // Add your JavaScript code here
+      console.log('Hello from the script!');
+    </script>
+  </div>
+  
+  <hr>
+  
+  <pre>
+    This is a preformatted text block.
+    It preserves both spacing and line breaks.
+  </pre>
   
   <footer>
     <p>Copyright &copy; 2023 Nyan Aung</p>
